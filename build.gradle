@@ -2,9 +2,13 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath "com.github.ben-manes:gradle-versions-plugin:0.20.0"
         classpath 'com.frogermcs.androiddevmetrics:androiddevmetrics-plugin:0.4'
     }
 }
